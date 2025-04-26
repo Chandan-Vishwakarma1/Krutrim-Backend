@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
 public class ApiResponseDto<T> {
     private boolean success;
