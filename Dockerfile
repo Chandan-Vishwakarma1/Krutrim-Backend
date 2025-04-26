@@ -1,20 +1,18 @@
-# Stage 1: Build
-FROM maven:3.8.6-openjdk-17 AS builder
+# Step 1: Build the application
+FROM maven:3.9.6-eclipse-temurin-17 AS builder
 
 WORKDIR /app
 
-# Copy the source code
-COPY . .
+COPY pom.xml .
+COPY src ./src
 
-# Build the project
 RUN mvn clean package -DskipTests
 
-# Stage 2: Run
-FROM openjdk:17-jdk-slim
+# Step 2: Run the application
+FROM eclipse-temurin:17-jdk
 
 WORKDIR /app
 
-# Copy the jar file from the builder stage
 COPY --from=builder /app/target/*.jar app.jar
 
 EXPOSE 8080
