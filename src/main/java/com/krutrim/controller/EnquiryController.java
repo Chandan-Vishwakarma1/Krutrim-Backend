@@ -16,7 +16,6 @@ import com.krutrim.dto.ApiResponseDto;
 import com.krutrim.entity.Enquiry;
 import com.krutrim.service.EnquiryService;
 
-@CrossOrigin(origins = "https://your-app.vercel.app")
 @RestController
 @RequestMapping("/enquiries")
 public class EnquiryController {

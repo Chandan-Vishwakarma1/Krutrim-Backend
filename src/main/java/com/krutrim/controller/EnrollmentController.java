@@ -17,7 +17,6 @@ import com.krutrim.dto.ApiResponseDto;
 import com.krutrim.entity.Enrollment;
 import com.krutrim.service.EnrollmentService;
 
-@CrossOrigin(origins = "https://your-app.vercel.app")
 @RestController
 @RequestMapping("/enrollments")
 public class EnrollmentController {
