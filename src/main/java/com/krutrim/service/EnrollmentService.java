@@ -23,13 +23,6 @@ public class EnrollmentService {
     private EmailService emailService;
 
     public EnrollmentResponseDto createEnrollment(EnrollmentRequestDto enrollmentRequestDto) {
-//        if(enrollmentRepository.existsByEmail(enrollmentRequestDto.getEmail()))
-//        {
-//            throw new EmailAlreadyExistsException("Email already registered");
-//        }
-//        if (enrollmentRepository.existsByPhone(enrollmentRequestDto.getPhone())) {
-//            throw new PhoneAlreadyExistsException("Phone number already registered");
-//        }
 
         Enrollment enrollment = EnrollmentMapper.toEntity(enrollmentRequestDto);
         Enrollment savedEnrollment = enrollmentRepository.save(enrollment);
