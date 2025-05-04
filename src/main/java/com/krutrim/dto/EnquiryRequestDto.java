@@ -18,4 +18,5 @@ public class EnquiryRequestDto {
     @NotBlank(message = "Phone number is mandatory")
     private String mobile;
     private String message;
+
 }

@@ -34,7 +34,6 @@ public class EnquiryController {
         List<EnquiryResponseDto> enquiries = enquiryService.getAllEnquiries();
         ApiResponseDto<List<EnquiryResponseDto>> response = new ApiResponseDto<>(HttpStatus.OK.value(), "Enquiries fetched successfully", enquiries);
         return ResponseEntity.status(HttpStatus.OK).body(response);
-
     }
 
 //    @DeleteMapping

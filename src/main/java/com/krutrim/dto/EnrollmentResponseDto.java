@@ -19,5 +19,4 @@ public class EnrollmentResponseDto {
     private String profession;
     private String mode;
     private LocalDateTime createdDate;
-
 }

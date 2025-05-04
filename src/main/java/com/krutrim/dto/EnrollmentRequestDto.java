@@ -22,5 +22,4 @@ public class EnrollmentRequestDto {
     private String phone;
     private String profession;
     private String mode;
-
 }

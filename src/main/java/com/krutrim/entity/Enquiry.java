@@ -24,5 +24,6 @@ public class Enquiry {
     private String message;
     @CreatedDate
     private LocalDateTime createdDate;
+
 }
 

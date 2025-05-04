@@ -41,6 +41,5 @@ public class EnrollmentController {
 //        enrollmentService.deleteAllEnrollments();
 //        return ResponseEntity.ok(new ApiResponseDto<>(HttpStatus.OK.value(),"All enrollments deleted successfully",null));
 //    }
-
 }
 
