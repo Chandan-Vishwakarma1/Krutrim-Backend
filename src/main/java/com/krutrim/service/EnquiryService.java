@@ -25,5 +25,10 @@ public class EnquiryService {
     public List<EnquiryResponseDto> getAllEnquiries() {
         return EnquiryMapper.toDtoList(enquiryRepository.findAll());
     }
+
+    public void deleteAllEnrollments() {
+        enquiryRepository.deleteAll();
+    }
+
 }
 

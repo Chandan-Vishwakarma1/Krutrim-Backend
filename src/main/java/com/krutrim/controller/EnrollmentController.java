@@ -33,15 +33,13 @@ public class EnrollmentController {
     public ResponseEntity<ApiResponseDto<List<EnrollmentResponseDto>>> getAllEnrollments() {
     	 List<EnrollmentResponseDto> enrollments = enrollmentService.getAllEnrollments();
     	    ApiResponseDto<List<EnrollmentResponseDto>> response = new ApiResponseDto<>(HttpStatus.OK.value(), "All enrollments retrieved successfully", enrollments);
-    	    return ResponseEntity.ok(response);
+    	    return ResponseEntity.status(HttpStatus.OK).body(response);
     }
 
-
-    @DeleteMapping
-    public ResponseEntity<String> deleteAllEnrollments() {
-        enrollmentService.deleteAllEnrollments();
-        return ResponseEntity.ok("All enrollments deleted successfully");
-    }
-
+//    @DeleteMapping
+//    public ResponseEntity<ApiResponseDto<Void>> deleteAllEnrollments() {
+//        enrollmentService.deleteAllEnrollments();
+//        return ResponseEntity.ok(new ApiResponseDto<>(HttpStatus.OK.value(),"All enrollments deleted successfully",null));
+//    }
 }
 

@@ -25,8 +25,8 @@ public class Enrollment {
 	private String name;
 	private String email;
 	private String phone;
+	private String profession;
 	private String mode;
-	private String message;
 	@CreatedDate
 	private LocalDateTime createdDate;
 

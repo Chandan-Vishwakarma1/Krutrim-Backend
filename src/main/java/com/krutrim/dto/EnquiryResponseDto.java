@@ -15,5 +15,6 @@ public class EnquiryResponseDto {
     private String name;
     private String email;
     private String mobile;
+    private String message;
     private LocalDateTime createdDate;
 }

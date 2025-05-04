@@ -20,6 +20,6 @@ public class EnrollmentRequestDto {
     private String email;
     @NotBlank(message = "Phone number is mandatory")
     private String phone;
+    private String profession;
     private String mode;
-    private String message;
 }

@@ -15,6 +15,7 @@ public class EnquiryMapper {
         enquiry.setName(dto.getName());
         enquiry.setEmail(dto.getEmail());
         enquiry.setMobile(dto.getMobile());
+        enquiry.setMessage(dto.getMessage());
         return enquiry;
     }
 
@@ -24,6 +25,8 @@ public class EnquiryMapper {
         dto.setName(enquiry.getName());
         dto.setEmail(enquiry.getEmail());
         dto.setMobile(enquiry.getMobile());
+        dto.setMessage(enquiry.getMessage());
+        dto.setCreatedDate(enquiry.getCreatedDate());
         return dto;
     }
 
