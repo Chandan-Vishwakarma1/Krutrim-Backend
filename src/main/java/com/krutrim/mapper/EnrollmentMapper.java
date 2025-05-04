@@ -12,8 +12,8 @@ public class EnrollmentMapper {
         enrollment.setName(dto.getName());
         enrollment.setEmail(dto.getEmail());
         enrollment.setPhone(dto.getPhone());
+        enrollment.setProfession(dto.getProfession());
         enrollment.setMode(dto.getMode());
-        enrollment.setMessage(dto.getMessage());
         return enrollment;
     }
 
@@ -24,8 +24,8 @@ public class EnrollmentMapper {
         dto.setName(enrollment.getName());
         dto.setEmail(enrollment.getEmail());
         dto.setPhone(enrollment.getPhone());
+        dto.setProfession(enrollment.getProfession());
         dto.setMode(enrollment.getMode());
-        dto.setMessage(enrollment.getMessage());
         dto.setCreatedDate(enrollment.getCreatedDate());
         return dto;
     }

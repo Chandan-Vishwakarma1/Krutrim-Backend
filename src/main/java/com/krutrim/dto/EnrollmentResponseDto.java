@@ -16,9 +16,8 @@ public class EnrollmentResponseDto {
     private String name;
     private String email;
     private String phone;
+    private String profession;
     private String mode;
-    private String message;
     private LocalDateTime createdDate;
-
 
 }
