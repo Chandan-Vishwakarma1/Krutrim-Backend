@@ -8,35 +8,10 @@ import lombok.Setter;
 
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
 public class ApiResponseDto<T> {
-    private boolean success;
+    private int statusCode;
     private String message;
     private T data;
-    
-	public ApiResponseDto(boolean success, String message, T data) {
-		super();
-		this.success = success;
-		this.message = message;
-		this.data = data;
-	}
-	public boolean isSuccess() {
-		return success;
-	}
-	public void setSuccess(boolean success) {
-		this.success = success;
-	}
-	public String getMessage() {
-		return message;
-	}
-	public void setMessage(String message) {
-		this.message = message;
-	}
-	public T getData() {
-		return data;
-	}
-	public void setData(T data) {
-		this.data = data;
-	}
-    
-    
+
 }

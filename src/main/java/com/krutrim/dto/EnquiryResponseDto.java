@@ -1,23 +1,19 @@
-package com.krutrim.entity;
+package com.krutrim.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.data.annotation.CreatedDate;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
+import java.time.LocalDateTime;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Document(collection = "enquiries")
-public class Enquiry {
-
-    @Id
+public class EnquiryResponseDto {
     private String id;
-
     private String name;
     private String email;
     private String mobile;
+    private LocalDateTime createdDate;
 }
-
